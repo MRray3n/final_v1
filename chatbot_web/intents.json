@@ -1,0 +1,319 @@
+{
+    "intents": [
+        {
+            "tag": "salutation",
+            "patterns": [
+                "Salut",
+                "Comment vas-tu?",
+                "Y a-t-il quelqu'un?",
+                "Bonjour",
+                "aslema",
+                "slm"
+            ],
+            "responses": [
+                "Bonjour, merci de votre visite",
+                "Bonjour! Comment puis-je vous aider aujourd'hui?",
+                "Bonjour! Comment puis-je rendre votre expérience ici plus agréable?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "merci",
+            "patterns": [
+                "Merci",
+                "C'est utile"
+            ],
+            "responses": [
+                "Heureux de vous aider!",
+                "À tout moment!",
+                "C'est avec plaisir"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "aurevoir",
+            "patterns": [
+                "Au revoir",
+                "A plus tard"
+            ],
+            "responses": [
+                "A plus tard, merci de votre visite",
+                "Bonne journée",
+                "Bye! Revenez bientôt."
+            ],
+            "context_filter": ""
+        },
+        {
+            "tag": "actualites",
+            "patterns": [
+                "Quelles sont les dernières nouvelles de l'université?",
+                "Pouvez-vous me parler des récents développements à l'université?",
+                "Je suis intéressé à entendre parler de toute nouvelle ou événement se produisant sur le campus.",
+                "Que se passe-t-il à l'université cette semaine?",
+                "Je veux savoir s'il y a des événements prévus sur le campus.",
+                "Avez-vous des informations sur les programmes d'études offerts à l'université?",
+                "Y a-t-il des bourses d'études disponibles pour les étudiants?",
+                "Pouvez-vous me dire où se trouve le bureau des admissions?",
+                "news",
+                "actualites"
+            ],
+            "responses": [
+                "news"
+            ]
+            
+        },
+        {
+            "tag": "Vie etudiante",
+            "patterns": [
+                "Quels clubs et organisations sont disponibles ?",
+                "Quelles ressources sont disponibles pour les étudiants ?"
+            ],
+            "responses": [
+                "Nous avons plusieurs activités parascolaires et clubs disponibles pour les étudiants, y compris des équipes sportives, des organisations de bénévoles et des clubs académiques.",
+                "Vous pouvez trouver des informations sur les événements et les activités à venir sur notre site Web ou via nos organisations étudiantes.",
+                "Nous offrons également des ressources pour les étudiants, telles que des services de counseling et de santé, pour soutenir vos objectifs personnels et académiques."
+            ],
+            "context_set": "club"
+        },
+        {
+            "tag": "nom_du_club",
+            "patterns": [
+                "Quels sont les noms des clubs ?"
+            ],
+            "responses": [
+                "tunivisions , technomaker, dynamic ,microsoft, chess club ...."
+            ],
+            "context_filter": "club"
+        },
+        {
+            "tag": "Aide financiere",
+            "patterns": [
+                "Quels types d'aide financière sont disponibles ?",
+                "Comment puis-je demander une aide financière ?",
+                "Quand vais-je recevoir ma bourse d'aide financière ?"
+            ],
+            "responses": [
+                "1-Bourse étudiante----------2-Bourse universitaire pour étudiants étrangers-------------3-Bourses et prêts de maîtrise4-Bourses de doctorat---------------5-Bourses et prêts étudiants pour les enfants scolarisés--------------6-Bourses d'études pour les enfants de familles tunisiennes résidant à l'étranger7-bourse de stage-----------------------Voulez-vous un lien pour plus d'informations?"
+            ],
+            "context_set": "Aide"
+        },
+        {
+            "tag": "Aide financiere-1",
+            "patterns": [
+                "oui je peux"
+            ],
+            "responses": [
+                "visite pour plus d'information "
+            ],
+            "context_filter": "Aide"
+        },
+        {
+            "tag": "Politiques et procedures",
+            "patterns": [
+                "Où puis-je trouver le code de conduite étudiant ?",
+                "Quelles sont les politiques d'inscription à l'université ?",
+                "Comment l'université protège-t-elle ma vie privée ?"
+            ],
+            "responses": [
+                "Le code de conduite étudiant est disponible sur le site web de l'université. Vous pouvez également le demander à notre bureau d'information.",
+                "Les politiques d'inscription à l'université dépendent du programme et du niveau d'études. Vous pouvez consulter le site web de l'université pour obtenir des informations détaillées sur les politiques d'inscription.",
+                "L'université prend la vie privée de ses étudiants très au sérieux. Nous respectons toutes les lois et réglementations en matière de protection des données personnelles. Vous pouvez consulter notre politique de confidentialité sur le site web de l'université."
+            ]
+        },
+        {
+            "tag": "Informations de contact",
+            "patterns": [
+                "Comment puis-je contacter le département des admissions ?",
+                "Où puis-je trouver les coordonnées du département des finances ?",
+                "Comment puis-je contacter le département des services aux étudiants ?"
+            ],
+            "responses": [
+                "Adresse: Route périphérique Dar El Amen 3100 Kairouan Tél: +216 77 27 38 04/ +216 77 27 37 96 / Fax: +216 77 27 38 06   Email : issatkr@issatkr.rnu.tn"
+            ]
+        },
+        {
+            "tag": "Personnel_Responsable_Mécanique",
+            "patterns": [
+                "Qui est le personnel responsable pour Mécanique ?",
+                "Pouvez-vous me dire qui est responsable de Mécanique ?",
+                "J'ai besoin de parler au personnel responsable pour Mécanique"
+            ],
+            "responses": [
+                "Le personnel responsable pour Mécanique est Gharbi Fathi.",
+                "Vous pouvez contacter Gharbi Fathi pour obtenir de l'aide avec Mécanique.",
+                "Veuillez contacter Gharbi Fathi si vous avez des questions concernant Mécanique."
+            ]
+        },
+        {
+            "tag": "Personnel_Responsable_Electrique",
+            "patterns": [
+                "Qui est le personnel responsable pour Electrique ?",
+                "Pouvez-vous me dire qui est responsable de Electrique ?",
+                "J'ai besoin de parler au personnel responsable pour Electrique"
+            ],
+            "responses": [
+                "Le personnel responsable pour Electrique est Abdellaoui Mehrez.",
+                "Vous pouvez contacter Abdellaoui Mehrez pour obtenir de l'aide avec Electrique.",
+                "Veuillez contacter Abdellaoui Mehrez si vous avez des questions concernant Electrique."
+            ]
+        },
+        {
+            "tag": "Personnel_Responsable_INFORMATIQUE",
+            "patterns": [
+                "Qui est le personnel responsable pour Mathématique, PHYSIQUE ET INFORMATIQUE ?",
+                "Pouvez-vous me dire qui est responsable de Mathématique, PHYSIQUE ET INFORMATIQUE ?",
+                "J'ai besoin de parler au personnel responsable pour Mathématique, PHYSIQUE ET INFORMATIQUE",
+                "Qui est le personnel responsable pour INFORMATIQUE ?",
+                "Pouvez-vous me dire qui est responsable de INFORMATIQUE ?",
+                "J'ai besoin de parler au personnel responsable pour INFORMATIQUE",
+                "Qui est le personnel responsable pour Mathématique?",
+                "Pouvez-vous me dire qui est responsable de Mathématique?",
+                "J'ai besoin de parler au personnel responsable pour Mathématique"
+            ],
+            "responses": [
+                "Le personnel responsable pour Mathématique, PHYSIQUE ET INFORMATIQUE est Garbouj Zied.",
+                "Vous pouvez contacter Garbouj Zied pour obtenir de l'aide avec Mathématique, PHYSIQUE ET INFORMATIQUE.",
+                "Veuillez contacter Garbouj Zied si vous avez des questions concernant Mathématique, PHYSIQUE ET INFORMATIQUE."
+            ]
+        },
+        {
+            "tag": "certifdepresence",
+            "patterns": [
+                "Comment puis-je obtenir une attestation de présence",
+                " certficat de presence"
+            ],
+            "responses": [
+                "Vous pouvez contacter le Bureau des affaires étudiantes pour vous aider"
+            ]
+        },
+        {
+            "tag": "InscriptionAdministrative",
+            "patterns": [
+                "Comment puis-je m'inscrire administrativement ?",
+                "Pouvez-vous m'aider à m'inscrire administrativement ?",
+                "Quelle est la procédure pour l'inscription administrative ?"
+            ],
+            "responses": [
+                "L'inscription à l'université est ouverte en début d'année, vous souhaitez connaître les documents nécessaires à l'inscription ?"
+            ],
+            "context_set": "InscriptionAdministrative"
+        },
+        {
+            "tag": "InscriptionAdministrative--1",
+            "patterns": [
+                "oui"
+            ],
+            "responses": [
+                "\"Pour les nouveaux étudiants: le reçu de paiement des frais d'inscription est extrait après avoir terminé le processus d'inscription à distance Une copie de la carte d'orientation- 4 photos solaires   -Une copie de la carte nationale d'identité      Une copie du relevé de notes du baccalauréat et du carnet de santé      Reconstruction après ça https: //issatkr.rnu.tn/fra/fiche-de-renseignement/nouveau/       de et jou tire les instructions de la carte      Veillez strictement à conserver le mot de passe      - Pour les anciens étudiants appartenant à l'établissement : le reçu de paiement des frais d'inscription extrait du site d'inscription à distance",
+                "extrait après l'achèvement du processus d'inscription A distance - Pour les anciens étudiants venant d'un autre établissement : un reçu de paiement des frais d'inscription",
+                "4photographies",
+                "une autorisation d'inscription",
+                "un certificat de fin d'études et des copies D'après les listes de numéros des années précédentes",
+                "attestés identiques à l'original"
+            ],
+            "context_filter": "InscriptionAdministrative"
+            
+        },
+        {
+            "tag": "InscriptionAdministrative--2",
+            "patterns": [
+                "Quels sont les frais d'inscription dans un institut?"
+            ],
+            "responses": [
+                "\"4 Frais d'inscription pour tous les étudiants :Premier versement 40 400 détaillé comme suit 42 400 pour les dernières années 1. 30 000 frais d'inscription 2. 5 000",
+                "cotisations connues à la Caisse nationale de sécurité sociale   3. 2 000 informations d'affranchissement    4. 2 000 informations sur l'émission de la carte d'étudiant 5 1 400 participations connues à la coopérative accident scolaire et universitaire (3 400 dinars pour les dernières années)  Deuxième versement : 30 000   Remarque : Tout étudiant ayant obtenu une bourse ou un prêt universitaire",
+                "qu'il soit de la Caisse des Services Universitaires ou de l'une des caisses sociales (CNSS) ou CNRPS",
+                "est  exonéré du paiement de la deuxième tranche",
+                "à condition qu'il dépose dans le mois de février un document prouvant qu'il a obtenu un prêt universitaire.\""
+            ]
+            
+        },
+        {
+            "tag": "EmploiTemps",
+            "patterns": [
+                "Quel est mon emploi du temps ?"
+            ],
+            "responses": [
+                "Vous pouvez retrouver votre emploi du temps sur le site officiel de l'Institut ou être affiché dans l'Institut, Voulez-vous que je vous envoie le site ?"
+            ],
+            "context_set": "EmploiTemps"
+        },
+        {
+            "tag": "EmploiTemps-1",
+            "patterns": [
+                "oui"
+            ],
+            "responses": [
+                "https://issatkr.rnu.tn/"
+            ],
+            "context_filter": "EmploiTemps"
+        },
+        {
+            "tag": "vacation",
+            "patterns": [
+                "Quand sont les vacances universitaires ?",
+                "Quelles sont les dates des congés universitaires ?",
+                "Est-ce qu'il y a des vacances à l'université ?"
+            ],
+            "responses": [
+                "vacance"
+            ]
+            
+        },
+        {
+            "tag": "Notes",
+            "patterns": [
+                "Où puis-je trouver mes notes ?",
+                "Comment puis-je voir mes résultats ?",
+                "Quand est-ce que je recevrai mes notes ?"
+            ],
+            "responses": [
+                "Vous pouvez trouver vos notes sur le site officiel de l'institut ou ils seront affichés à l'institut à une heure précise déterminée par l'administration sur la page officielle sur Facebook"
+            ]
+        },
+        {
+            "tag": "CalendrierScolaire",
+            "patterns": [
+                "Quand sont les vacances scolaires ?",
+                "Est-ce que les classes sont annulées pour les vacances ?",
+                "Quand est-ce que le semestre commence ?"
+            ],
+            "responses": [
+                "L'administration publie sur la page Facebook en début d'année"
+            ]
+        },
+        {
+            "tag": "DemandeDiplome",
+            "patterns": [
+                "Comment puis-je demander un diplôme ?",
+                "Quels sont les documents nécessaires pour demander un diplôme ?",
+                "Quand est-ce que je recevrai mon diplôme ?"
+            ],
+            "responses": [
+                "Vous pouvez contacter l'administration pour obtenir votre diplôme"
+            ]
+        },
+        {
+            "tag": "ProblemeInformatique",
+            "patterns": [
+                "J'ai un problème avec mon compte étudiant",
+                "Je ne peux pas me connecter à mon compte étudiant",
+                "Comment puis-je récupérer mon mot de passe ?"
+            ],
+            "responses": [
+                "Vous pouvez contacter M. Ali Diwani pour résoudre ce problème"
+            ]
+        },
+        {
+            "tag": "Orientation",
+            "patterns": [
+                "Comment puis-je obtenir des conseils d'orientation ?",
+                "Je ne suis pas sûr de mon choix de carrière",
+                "Je veux en savoir plus sur les perspectives d'emploi pour mon programme d'études"
+            ],
+            "responses": [
+                "Si vous cherchez des conseils d'orientation pour vous aider à choisir une carrière ou un programme d'études, je peux vous aider à comprendre les différentes options disponibles, les perspectives d'emploi pour chaque domaine et les compétences requises pour réussir. Si vous avez des questions spécifiques sur votre programme d'études, n'hésitez pas à me demander de l'aide."
+            ]
+        }
+    ]
+}
